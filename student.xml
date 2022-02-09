@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+	<!DOCTYPE hibernate-mapping PUBLIC 
+	"-Hibernate/Hibernate Mapping DTDEN"
+	"http:www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.mondee.Student" table="Student">
+		<id name="sid" column="sid"></id>
+		
+		<property name="sname" column="name"></property>	
+		<property name="marks" column="marks"></property>	
+	
+	</class>	
+</hibernate-mapping>
