@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration SYSTEM 
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+		<property name="connection.user">root</property>
+		<property name="connection.password">root</property>
+		
+		<property name="show_sql">true</property>
+		<property name="dialet">org.hibernate.dialect.MySQLDialect</property>
+		<!-- <property name="hbm2ddl.auto">create</property> -->
+		<property name="hbm2ddl.auto">create</property>
+		
+		
+		<!-- <mapping resource="payment.xml"></mapping> -->
+		
+		<!-- <mapping class="com.mondee.Payment"></mapping> -->
+		
+		 <mapping class="com.mondee.CreditCard3"/>  
+        <mapping class="com.mondee.Cheque3"/>  
+        <mapping class="com.mondee.Payment3"/>  
+		 
+	</session-factory>
+</hibernate-configuration>
